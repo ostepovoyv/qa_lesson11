@@ -9,7 +9,8 @@ import static org.openqa.selenium.By.linkText;
 public class GitHubPage {
 
 
-    private final SelenideElement searchInput = $(".header-search-input"),
+    private final SelenideElement
+            searchInput = $(".header-search-input"),
             wikiTab = $("#wiki-tab");
 
     @Step("Открываем страницу {repo}")
@@ -21,7 +22,7 @@ public class GitHubPage {
         return this;
     }
 
-    @Step("Открываем WIKI {REPO}")
+    @Step("Открываем WIKI")
     public GitHubPage openWikiPage() {
         wikiTab.click();
         return this;

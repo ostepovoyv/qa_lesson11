@@ -17,10 +17,9 @@ public class TestBase {
     @BeforeAll
     public static void setUpMain(){
         Configuration.browserSize = "1920x1080";
-        Configuration.pageLoadTimeout = 100000;
-//        Configuration.browser= "firefox";
+        Configuration.pageLoadTimeout = 10000;
         Configuration.baseUrl= URL;
-//        Configuration.holdBrowserOpen = true;
+
     }
 
     @BeforeEach
